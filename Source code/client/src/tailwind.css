@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.alice-carousel {
+    z-index: -1 !important;
+    margin-bottom: -250px !important;
+  }
+  
+  .home__image {
+    width: 100%;
+    z-index: -1;
+    /* margin-bottom: -50px; */
+    mask-image: linear-gradient(
+      to bottom,
+      rgba(235, 237, 237, 1),
+      rgba(235, 237, 237, 0)
+    );
+    cursor: pointer;
+  }
+  
+  .header-nav{
+    background-color: white;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+  }
+  
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+    max-height: 400px;
+    min-width: 100px;
+    background-color: white;
+    z-index: 1;
+    border-radius: 10px;
+  }
+  
+  .card-background{
+    background: transparent;
+    margin-right: 20px;
+  }
+  
+  .product_image {
+    max-height: 200px;
+    width: 100%;
+    margin-bottom: 15px;
+    object-fit: contain;
+  }
+  
+  .product__price, .product__name  {
+    margin: 5px;
+    text-align: center;
+  }
+  
+  body{
+    background-color: #ebeded;
+  }
+
+.product__button {
+    margin-top: 10px;
+    --tw-bg-opacity: 1;
+    background-color: rgba(5, 40, 161, var(--tw-bg-opacity));
+
+    
+  }
+  
+.product__button:hover { 
+    --tw-bg-opacity: 1;
+    background-color: rgba(30, 63, 179, var(--tw-bg-opacity));
+}
+
+.form_background{
+    background-color:white;
+    padding: 50px;
+    border-radius: 10px;
+}
